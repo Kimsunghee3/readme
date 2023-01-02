@@ -94,9 +94,10 @@
 <!-- team name -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=team5&fontSize=90" />
 
-<!-- 
-<img src="https://img.shields.io/badge/mysql-바탕색?style=flat&logo=mysql&logoColor=white"/> -->
 
-```
-div
-```
+<div>💻Platforms & Language🧾</div>
+<div>
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=MySQL&logoColor=white" />
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" />
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" />
+</div>
