@@ -1,5 +1,7 @@
+<div align="center">
 <!-- Header -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Team5&fontSize=90" />
+
 
 # Slide
 </br>![slide](https://user-images.githubusercontent.com/83848462/210202091-08c59b60-c454-425b-92ee-10d0adc34638.gif)
@@ -12,8 +14,6 @@
 
 # ⛄︎프로젝트 일정⛄︎
 <img src="./img/프로젝트일정.png"/>
-
-
 
 
 # 💻 Platforms & Language 🧾
@@ -43,8 +43,12 @@
     <img src="https://img.shields.io/badge/Gmail-EA4335?style=flat&logo=Gmail&logoColor=white" />
 </div>
 
+</br>
 
 # Express Project
+
+</div>
+
 
 -   강찬수
 -   김성희
