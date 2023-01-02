@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/header.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap'); </style>
+    <link href="/css/user/profile.css" type="text/css" rel="stylesheet">
+    <script defer src="/js/admin/adminList.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" style="background-color: #2e2e2e70;">
+            <div class="header_content">
+                <div class="header_title">Team 5</div>
+                <div class="header_navigation_menus">
+                    <div class="header_navigation_menu"><a href="/">Home</a></div>
+                    <div class="header_navigation_menu"><a href="/user/logout">Logout</a></div>
+                    <div class="header_navigation_menu"><a href="/user/Profile">Profile</a></div>
+                </div>
+            </div>
+        </header>
+        <div id="header">
+            <div id="subject" class="container">
+                <div>
+                    <h1>User ProFile</h1>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="content">
+            <div id="content_info" class="container">
+                <div id="info_user">
+                    <ul>
+                        <li>
+                            <div class="list_subject">ID</div>
+                            <div id="user_id" class="list_content">{{user.user_id}}</div>
+                        </li>
+                        <li>
+                            <div class="list_subject">PassWord</div>
+                            <div id="user_name" class="list_content">{{user.user_pw}}</div>
+                        </li>
+                        <li>
+                            <div class="list_subject">UserName</div>
+                            <div id="gender" class="list_content">{{user.user_name}}</div>
+                        </li>
+                        <li>
+                            <div class="list_subject">NickName</div>
+                            <div id="telephone" class="list_content">{{user.nickname}}</div>
+                        </li>
+                        <li>
+                            <div class="list_subject">author</div>
+                            <div id="telephone" class="list_content author">{{user.user_author}}</div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="info_user">
+                    <ul>
+                        <li>
+                            <div class="list_subject">birth</div>
+                            <div id="mobile" class="list_content">{{user.birth}}</div>
+                        </li>
+                        <li>
+                            <div class="list_subject">Gender</div>
+                            <div id="gender" class="list_content">{{user.gender}}</div>
+                        </li>
+                        <li>
+                            <div class="list_subject">Telephone</div>
+                            <div id="telephone" class="list_content">{{user.telephone}}</div>
+                        </li>
+                        <li>
+                            <div class="list_subject">mobile</div>
+                            <div id="user_name" class="list_content">{{user.mobile}}</div>
+                        </li>
+                        <li>
+                            <div class="list_subject">level</div>
+                            <div id="user_name" class="list_content">{{user.level}}</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer" id="footer">
+            <div class="footer_icons">
+                <h2> Team 5 GitHub</h2>
+                <div class="footer_icons_wrapper">
+                    <a href="https://github.com/char1ey95/Express-Project">
+                        <img src="/img/main/git-hub.png">
+                    </a>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                Copyright © 2022 All rights reserved | This template is made by Char1ey.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

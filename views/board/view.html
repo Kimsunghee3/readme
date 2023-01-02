@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/global.css" rel="stylesheet">
+    <link href="/css/board/view.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap'); </style>
+</head>
+<body>
+
+    <div id="wrap">
+        <header class="header" style="background-color: #2e2e2e70;">
+            <div class="header_content">
+                <div class="header_title">Team 5</div>
+                <div class="header_navigation_menus">
+                    <div class="header_navigation_menu"><a href="/">Home</a></div>
+                    <div class="header_navigation_menu"><a href="/user/logout">Logout</a></div>
+                    <div class="header_navigation_menu"><a href="/user/Profile">Profile</a></div>
+                </div>
+            </div>
+        </header>
+        <div id="header_wrap">
+            <div id="header" class="container">
+                <div id="subject">
+                    <h1>
+                        View Page
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="content_wrap">
+            <div id="content" class="container">
+                <div id="content_layout">
+                    <div id="box">
+                        <div>제목</div>
+                        <div id="subject">{{itemView.subject}}</div>
+                        <div>작성자</div>
+                        <div id="user_id">{{itemView.user_id}}</div> 
+                        <div>내용</div>
+                        <div id="content">{{itemView.content}}</div>
+                        <div id="button">
+                            <a href="/board/list">
+                                <button type="button">목록가기</button>
+                            </a>
+                            <a href="/board/modify?index={{itemView.idx}}">
+                                <button type="button" class="back">수정하기</button>
+                            </a>
+                            
+                            <form method="post">
+                                <input type="hidden" name="user_id" value="{{itemView.user_id}}">
+                                <button type="submit">삭제하기</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer" id="footer">
+            <div class="footer_icons">
+                <h2> Team 5 GitHub</h2>
+                <div class="footer_icons_wrapper">
+                    <a href="https://github.com/char1ey95/Express-Project">
+                        <img src="/img/main/git-hub.png">
+                    </a>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                Copyright © 2022 All rights reserved | This template is made by Char1ey.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

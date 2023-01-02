@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/admin/gradation.css">
+    <link rel="stylesheet" href="/css/admin/adminList.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap'); </style>
+    <script defer src="/js/admin/adminList.js"></script>
+    <script type="module" src="/js/admin/gradation.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header_wrap">
+                <div id="header">
+                    <h1>관리자 페이지</h1>
+                </div>
+        </div>
+        <div id="board_wrap">
+            <div id="board" class="container">
+                <div id="board_content">
+                    <table>
+                        <tr>
+                            <th>회원아이디</th>
+                            <th>회원이름</th>
+                            <th>닉네임</th>
+                            <th>전화번호</th>
+                            <th>회원이용여부</th>
+                            <th>회원권한레벨</th>
+                            <th>회원프로필</th>
+                        </tr>
+                        {% for list in userList %}
+                        <tr>
+                            <td>{{list.user_id}}
+                                <input type="hidden" name="user_id" value="{{list.user_id}}">
+                            </td>
+                            <td>{{list.user_name}}</td>
+                            <td>{{list.nickname}}</td>
+                            <td>{{list.mobile}}</td>
+                            <td class="author">{{list.user_author}}</td>
+                            <td>{{list.level}}</td>
+                            <td><a href="/admin/userEdit?user_id={{list.user_id}}">보기</a></td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                    <form method="post" class="change_wrap">
+                        <table class="change">
+                            <tr>
+                                <th>변경할 회원 아이디 입력</th>
+                                <th>회원사용 변경</th>
+                                <th>권한레벨 변경</th>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="user_id" class="box"></td>
+                                <td>
+                                    <select name="user_author">
+                                        <option value="1">가능</option>
+                                        <option value="2">불가능</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="level">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                        <button type="submit" class="btn">변경하기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer" id="footer">
+            <div class="footer_icons">
+                <h2> Team 5 GitHub</h2>
+                <div class="footer_icons_wrapper">
+                    <a href="https://github.com/char1ey95/Express-Project">
+                        <img src="/img/main/git-hub.png">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer_copyright">
+                Copyright © 2022 All rights reserved | This template is made by Char1ey.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

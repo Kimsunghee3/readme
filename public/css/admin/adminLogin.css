@@ -1,0 +1,143 @@
+:root {
+    --blue:#0359ae;
+    --green: #14b09b;
+    --sand: #ebe5d9;
+    --sandy:#e4dace;
+    --brown: #cc8a56;
+    --gray: #635F5A;
+    --white: #ececec;
+    --black: #3e3e3e;
+    --font_family: 'Noto Sans KR', sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+input {
+    width: 20rem;
+    height: 2rem;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 1rem;
+    outline: none;
+    margin-left: 2rem;
+    /* padding-left: 0.625rem; */
+    background-color: rgb(233, 233, 233);
+}
+
+button{
+    background: var(--green);
+    color: var(--white);
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    font-weight: 700;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+}
+button:hover{
+    background: var(--sand);
+    color:var(--black);
+}
+button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: var(--green);
+    transition: 400ms ease all;
+}
+button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+button:hover:before,button:hover:after{
+    width:100%;
+    transition: 800ms ease all;
+}
+
+.wrap {
+    width: 100%;
+    position: absolute;
+}
+
+.loginWrap {
+    display: flex;
+    flex-direction: column;
+    margin: 15rem auto;
+    width: 45rem;
+    height: 23rem;
+    border-radius: 1rem;
+    background-color: #e4daced0;
+}
+
+.loginWrap::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* background: linear-gradient(180deg, rgba(127, 114, 106, .1) 50%, rgba(179, 161, 130, 1) 100%), url(../img/2.jpg) 10% no-repeat; */
+    /* background-size: cover; */
+    /* height: 100%; */
+    z-index: -1;
+}
+
+.header {
+    margin: 2rem auto;
+}
+
+.header > h1 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.loginForm {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.loginContent {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginInfo {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: end;
+    font-size: 1.5rem;
+    line-height: 1.625rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+}

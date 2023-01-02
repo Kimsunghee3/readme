@@ -1,0 +1,17 @@
+.parallax_1 {
+    background-image: url(../img/main/scroll1.jpg);
+}
+.parallax_2 {
+    background-image: url(../img/main/scroll2.jpg);
+}
+.parallax_3 {
+    background-image: url(../img/main/scroll3.jpg);
+}
+
+.parallax {
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

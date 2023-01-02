@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/user/welcome.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap'); </style>
+</head>
+<body>
+    <div class="wrap">
+        <div id="join_wrap">
+            <div class="header_wrap">
+                <div class="header">
+                        {{user.user_name}}님 회원가입을 환영합니다.
+                </div>
+            </div>
+            <div class="info_wrap">
+                <div class="join ">
+                    
+                        <ul class="join_menu">
+                            <li>
+                                <div class="input_text">ID</div>
+                            </li>
+                            <li>
+                                <div class="input_text info">{{user.user_id}}</div>
+                            </li>
+                            <li>
+                                <div class="input_text">Name</div>
+                            </li>
+                            <li>
+                                <div class="input_text info">{{user.user_name}}</div>
+                            </li>
+                            <li>
+                                <div class="input_text">Gender</div>
+                            </li>
+                            <li>
+                                <div class="input_text info">{{user.gender}}</div>
+                            </li>
+                            <li>
+                                <div class="input_text">Tel.</div>
+                            </li>
+                            <li>
+                                <div class="input_text info">{{user.telephone}}</div>
+                            </li>
+                            <li>
+                                <div class="input_text">Phone</div>
+                            </li>
+                            <li>
+                                <div class="input_text info">{{user.mobile}}</div>
+                            </li>
+                        </ul>
+                        <div class="button">
+                            <button class="back_button btn" type="button"><a href="/">Home</a></button>
+                        </div>
+                </div>
+            </div>
+            <div class="footer_wrap">
+                <div class="footer">
+                    <div class="copyright">
+                        Copyright © 2022 All rights reserved | This template is made by Char1ey.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

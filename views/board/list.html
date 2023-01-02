@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/board/board.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap'); </style>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header" style="background-color: #2e2e2e;">
+            <div class="header_content">
+                <div class="header_title">Team 5</div>
+                <div class="header_navigation_menus">
+                    <div class="header_navigation_menu"><a href="/">Home</a></div>
+                    <div class="header_navigation_menu"><a href="/user/logout">Logout</a></div>
+                    <div class="header_navigation_menu"><a href="/user/Profile">Profile</a></div>
+                </div>
+            </div>
+        </header>
+        <div id="board_wrap">
+            <div id="board" class="container">
+                <div id="board_layout">
+                    <div id="board_content">
+                        <table>
+                            <tr class="board_filed">
+                                <th>번호</th>
+                                <th>제목</th>
+                                <th>작성자</th>
+                                <th>작성일</th>
+                                <th>조회수</th>
+                            </tr>
+                            {% for item in itemList %}
+                            <tr class="board_content">
+                                <td>{{item.idx}}</td>
+                                <td><a href="/board/view?index={{item.idx}}">{{item.subject}}</a></td>
+                                <td>{{item.user_id}}</td>
+                                <td>{{item.registerDate}}</td>
+                                <td>{{item.hit}}</td>
+                            </tr>
+                            {% endfor %}
+                        </table>
+                    </div>
+                </div>
+                <div class="button_layout">
+                    <a href="/board/write"><button>글 작성하기</button></a>
+                    <a href="/"><button>홈으로가기</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer" id="footer">
+            <div class="footer_icons">
+                <h2> Team 5 GitHub</h2>
+                <div class="footer_icons_wrapper">
+                    <a href="https://github.com/char1ey95/Express-Project">
+                        <img src="/img/main/git-hub.png">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer_copyright">
+                Copyright © 2022 All rights reserved | This template is made by Char1ey.
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
