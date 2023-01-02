@@ -1,12 +1,19 @@
 <!-- Header -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Team5&fontSize=90" />
 
+# Slide
+</br>![slide](https://user-images.githubusercontent.com/83848462/210202091-08c59b60-c454-425b-92ee-10d0adc34638.gif)
+
+# Write Page
+![write](https://user-images.githubusercontent.com/83848462/210202101-ce83bda0-5798-4f75-85cb-8c285babeb35.gif)
+
+#Admin Page
+![admin](https://user-images.githubusercontent.com/83848462/210202102-4a8a197e-32e7-4bfb-af79-8d1e6f672b67.gif)
+
 # ⛄︎프로젝트 일정⛄︎
 <img src="./img/프로젝트일정.png"/>
 
-</br>![slide](https://user-images.githubusercontent.com/83848462/210202091-08c59b60-c454-425b-92ee-10d0adc34638.gif)
-![write](https://user-images.githubusercontent.com/83848462/210202101-ce83bda0-5798-4f75-85cb-8c285babeb35.gif)
-![admin](https://user-images.githubusercontent.com/83848462/210202102-4a8a197e-32e7-4bfb-af79-8d1e6f672b67.gif)
+
 
 
 # 💻 Platforms & Language 🧾
